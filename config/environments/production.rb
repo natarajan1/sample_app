@@ -1,6 +1,10 @@
 SampleApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+
+  # Force all access to the app over SSL, use Strict-Transport-Security,
+  # and use secure cookies.
+  config.force_ssl = true
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -56,7 +60,7 @@ SampleApp::Application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
-  config.i18n.fallbacks = true
+config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
